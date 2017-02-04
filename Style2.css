@@ -1,0 +1,8 @@
+@charset "utf-8"
+/*CSS Document*/
+*{margin:auto}
+.box1{width:900px;background-color:#ccff33; padding:10px; box-shadow:5px 10px 5px #888888; margin-left:100px; margin-bottom:20px; align:center;}
+.box2{width:900px;background-color:#ffcc33; padding:10px; box-shadow:5px 10px 5px #888888; margin-left:100px; margin-bottom:20px}
+.box3{width:900px;background-color:#d79edc; padding:10px; box-shadow:5px 10px 5px #888888; margin-left:100px;margin-bottom:20px}
+.box4{width:900px;background-color:#717b7b; padding:10px; box-shadow:5px 10px 5px #888888; margin-left:100px;margin-bottom:20px}
+
