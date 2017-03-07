@@ -1,7 +1,7 @@
 // Event handling
 document.addEventListener("DOMContentLoaded",
   function (event) {
-    
+    var cnt=0;
     function sayHello (event) {
       this.textContent = "Said it!";
       var name =
@@ -17,7 +17,11 @@ document.addEventListener("DOMContentLoaded",
           document
             .querySelector("#title")
             .textContent;
+        if (cnt==0)
+        {
         title += " & Lovin' it!";
+          cnt++;
+        }
         document
             .querySelector("h1")
             .textContent = title;
