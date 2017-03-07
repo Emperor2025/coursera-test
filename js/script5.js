@@ -1,3 +1,4 @@
+// Event handling
 document.addEventListener("DOMContentLoaded",
   function (event) {
     
@@ -23,5 +24,15 @@ document.addEventListener("DOMContentLoaded",
       }
     }
 
+    // Unobtrusive event binding
+    document.querySelector("button")
+      .addEventListener("click", sayHello);
+
   }
 );
+
+
+
+// document.querySelector("button")
+//   .onclick = sayHello;
+
