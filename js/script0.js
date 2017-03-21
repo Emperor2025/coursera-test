@@ -15,17 +15,35 @@ function sayHello () {
     .getElementById("content")
     .innerHTML = message;
 
-  if (name === "student") {
-    var title = 
-      document
-        .querySelector("#title")
-        .textContent;
-    title += " & Lovin' it!";
-    document
-        .querySelector("h1")
-        .textContent = title;
-  }
+  
 }
+
+document.addEventListener("DOMContentLoaded",
+  function (event) {
+    
+    // Unobtrusive event binding
+    document.querySelector("button")
+      .addEventListener("click", function () {
+        
+        // Call server to get the name
+        $ajaxUtils
+          .sendGetRequest("data/name.json", 
+            function (res) {
+              var message = 
+                res.firstName + " " 
+              if (res.name) {
+                message += "Course and Marks are:"+res.course+res.marks;
+              }
+              else {
+                message += "Record does not exist";
+              }
+             
+              document.querySelector("#content")
+                .innerHTML = "<h2>" + message + "</h2>";
+            });
+      });
+  }
+);
 
 
 
