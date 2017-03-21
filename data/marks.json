@@ -1,0 +1,10 @@
+var student1=
+{
+ "name":"John", "marks":90, "course":"Mathematics",
+ "name":"John", "marks":60, "course":"Operating Systems" 
+ };
+ var student2=
+ {
+ "name":"Michael", "marks":80, "course":"Mathematics",
+ "name":"Michael", "marks":70, "course":"Operating Systems"
+ };
