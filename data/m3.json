@@ -1,40 +1,40 @@
 {
-"number":"10",
+"number":10,
 "name":"Jason"
 },
 {
-"number":"20",
+"number":20,
 "name":"Mike"
 },
 {
-"number":"30",
+"number":30,
 "name":"Rachel"
 },
 {
-"number":"40",
+"number":40,
 "name":"Jessica"
 },
 {
-"number":"50",
+"number":50,
 "name":"Louis"
 },
 {
-"number":"60",
+"number":60,
 "name":"Harvey"
 },
 {
-"number":"70",
+"number":70,
 "name":"Donna"
 },
 {
-"number":"80",
+"number":80,
 "name":"Sean"
 },
 {
-  "number":"90",
+  "number":90,
 "name":"Tara"
 },
 {
-  "number":"99",
+  "number":99,
   "name":"Alice"
 }
