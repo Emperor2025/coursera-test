@@ -3,35 +3,24 @@
 document.addEventListener("DOMContentLoaded",
   function (event) {
     
-    function sayHello (event) {
-      this.textContent = "Display";
-      var name =
-       document.getElementById("name").value;
-       var message = "<h2>Hello " + name + "!</h2>";
+    
+document.querySelector("button")
+      .addEventListener("click", function () {
+        
+        // Call server to get the name
+        $ajaxUtils
+          .sendGetRequest("data/name.txt", 
+            function (request) {
+              var name = request.responseText;
 
-      document
-        .getElementById("content")
-        .innerHTML = message;
+              document.querySelector("#content")
+                .innerHTML = "<h2>Hello " + name + "!</h2>";
+            });
 
-      if (name === "student") {
-        var title = 
-          document
-            .querySelector("#title")
-            .textContent;
-        title += " & Lovin' it!";
-        document
-            .querySelector("h1")
-            .textContent = title;
-      }
-    }
-
-    // Unobtrusive event binding
-    document.querySelector("button")
-      .addEventListener("click", sayHello);
-
+        
+      });
   }
 );
-
 
 
 // document.querySelector("button")
