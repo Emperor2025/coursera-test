@@ -9,7 +9,7 @@ document.querySelector("button")
         
         // Call server to get the name
         $ajaxUtils
-          .sendGetRequest("data/name.txt", 
+          .sendGetRequest("data/m3.json", 
             function (request) {
               var name = request.responseText;
 
