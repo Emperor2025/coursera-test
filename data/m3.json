@@ -19,14 +19,22 @@
 "name":"Louis"
 },
 {
-number:"60",
-name:"Harvey"
+"number":"60",
+"name":"Harvey"
 },
 {
-number:"70",
-name:"Donna"
+"number":"70",
+"name":"Donna"
 },
 {
-number:"80",
-name:"Sean"
+"number":"80",
+"name":"Sean"
+},
+{
+  "number":"90",
+"name":"Tara"
+},
+{
+  "number":"99",
+  "name":"Alice"
 }
