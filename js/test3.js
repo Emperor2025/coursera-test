@@ -13,18 +13,6 @@ document.addEventListener("DOMContentLoaded",
         .getElementById("content")
         .innerHTML = message;
 
-      if (name === "student") {
-        var title = 
-          document
-            .querySelector("#title")
-            .textContent;
-        title += " & Lovin' it!";
-        document
-            .querySelector("h1")
-            .textContent = title;
-      }
-    }
-
     // Unobtrusive event binding
     document.querySelector("button")
       .addEventListener("click", sayHello);
@@ -45,7 +33,7 @@ document.querySelector("button")
         $ajaxUtils
           .sendGetRequest("data/m3.json", 
             function (request) {
-              var name = request.responseText;
+              var number = request.responseText;
 
               document.querySelector("#content")
                 .innerHTML = "<h2>Hello " + name + "!</h2>";
